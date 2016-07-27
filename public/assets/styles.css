@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+
+header{
+    width: 100%;
+    background-color: black;
+    height: 40px;
+}
+
+header li{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 50px;
+}
+
+header li a{
+    color: white;
+    font-family: 'Georgia';
+    font-size: 14px;
+    line-height: 35px;
+    text-decoration: none;
+    
+}
+
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.ctt-post{
+    display: inline-block;
+    vertical-align: top;
+    width: 70%;
+    margin-right: 50px;
+}
+
+.aside{
+    display: inline-block;
+    vertical-align: top;
+    background-color: grey;
+    width: 25%;
+    height: 700px;
+}
+
+.stage {
+    width: 100%;
+    display: block;
+}
+
+.stage img{
+    width: 100%;
+    background-color: lightgrey;
+    height: 300px;
+}
+
+
+.nav-home{
+    margin-top: -30px;
+    margin-bottom: 30px;
+}
+.nav-home li{
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    width: 250px;
+    height: 50px;
+    margin-right: 62px;
+}
+
+.nav-home li:first-child{
+    background-color: cadetblue;
+}.nav-home li:nth-child(2){
+    background-color: olivedrab;
+}.nav-home li:nth-child(3){
+    background-color: mistyrose;
+}
+.nav-home li:last-child{
+    margin-right: 0;
+    background: black;
+}
+.nav-home li a{
+    
+    display: block;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: white;
+    line-height: 10px;
+    padding: 20px;
+    text-decoration: none;
+    
+}
+.post:first-child{
+    width: 100%;
+    display: block;
+}
+.post:first-child a:before, .post:first-child a:after{
+    content:"";
+    width: 350px;
+}
+.post{
+    width: 48%;
+    display: inline-block;
+    vertical-align: top;
+    margin-right:10px;
+    margin-bottom: 20px;
+    
+}
+.post a{
+    color: black;
+    font-size: 13px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: block;
+
+}
+
+.post a:before{
+    content:"";
+    width: 145px;
+    height: 2px;
+    background-color: black;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+    
+}
+.post a:after{
+    content:"";
+    width: 145px;
+    height: 2px;
+    background-color: black;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+}
+
