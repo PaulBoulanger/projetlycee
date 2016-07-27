@@ -3,16 +3,16 @@
 
 @section('content')
    <div class="stage">
-       <img src="#" alt="" />
+       <img src="{{url('images/logo.png')}}" alt="">
    </div>
  <div class="wrap">
 
    <div class="nav-home">
        <ul>
-           <li><a href="#">Accueil</a></li>
-           <li><a href="#">Actualités</a></li>
-           <li><a href="#">Lycée</a></li>
-           <li><a href="#">Connexion</a></li>
+           <li class="current"><a href="{{ action('FrontController@index' )}}">Accueil</a></li>
+           <li><a href="{{ action('FrontController@actualites' )}}">Actualités</a></li>
+           <li><a href="{{ action('FrontController@lycee') }}">Lycée</a></li>
+           <li><a href="{{ action('BackController@index') }}">Connexion</a></li>
        </ul>
    </div>
     <div class="ctt-post">

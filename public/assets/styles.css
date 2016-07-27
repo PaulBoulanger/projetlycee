@@ -29,6 +29,7 @@ header li a{
     
 }
 
+
 .wrap{
     width: 1200px;
     margin: 0 auto;
@@ -52,12 +53,14 @@ header li a{
 .stage {
     width: 100%;
     display: block;
+    height: 700px;
+    background: url('../images/btn/fond.jpg') 0 0 repeat;
+    text-align: center;
 }
 
 .stage img{
-    width: 100%;
-    background-color: lightgrey;
-    height: 300px;
+    width: 450px;
+    display: inline-block;
 }
 
 
@@ -65,6 +68,7 @@ header li a{
     margin-top: -30px;
     margin-bottom: 30px;
 }
+
 .nav-home li{
     display: inline-block;
     vertical-align: middle;
@@ -72,37 +76,78 @@ header li a{
     width: 250px;
     height: 50px;
     margin-right: 62px;
+    border-bottom: 3px solid;
+    background-color: #fefefe;    
+   
 }
 
-.nav-home li:first-child{
-    background-color: cadetblue;
-}.nav-home li:nth-child(2){
-    background-color: olivedrab;
-}.nav-home li:nth-child(3){
-    background-color: mistyrose;
+
+.nav-home .current{
+  background-color: #9ccfde;
+    
 }
+
+.nav-home .current a{
+    color: white;
+}
+
+
+.nav-home li:first-child{
+    border-color: #9ccfde;
+}
+.nav-home li:nth-child(2){
+    border-color: #c6e584;
+}
+
+
+.nav-home li:nth-child(3){
+    border-color: #e0b9d9;
+}
+
 .nav-home li:last-child{
     margin-right: 0;
-    background: black;
+    border-color: #293035;
 }
+
 .nav-home li a{
-    
     display: block;
     font-size: 18px;
     text-transform: uppercase;
-    color: white;
+    color: black;
     line-height: 10px;
     padding: 20px;
     text-decoration: none;
     
 }
+
+
+.nav-home li:hover:nth-child(2){
+    background-color: #c6e584;
+    transition:background-color .5s;
+}
+.nav-home li:hover:nth-child(3){
+    background-color: #e0b9d9;
+    transition:background-color .5s;
+}
+.nav-home li:hover:nth-child(4){
+    background-color: #293035;
+    transition:background-color .5s;
+}
+
+.nav-home li a:hover{
+    color: white;
+}
+
+
 .post:first-child{
     width: 100%;
     display: block;
+    margin-top: 50px;
 }
 .post:first-child a:before, .post:first-child a:after{
     content:"";
     width: 350px;
+    transition: width 1s;
 }
 .post{
     width: 48%;
@@ -112,6 +157,11 @@ header li a{
     margin-bottom: 20px;
     
 }
+
+.post p{
+    display: block;
+    margin-top: 30px;
+}
 .post a{
     color: black;
     font-size: 13px;
@@ -120,7 +170,25 @@ header li a{
     margin-top: 20px;
     margin-bottom: 50px;
     display: block;
+    
+}
 
+.post h3{
+    padding: 15px;
+    background-color: black;
+    color: white;
+    display: initial;
+}
+
+
+.post:first-child a:hover:before, .post:first-child a:hover:after{
+    width: 50px;
+    transition:width 1s;
+}
+
+.post a:hover:before, .post a:hover:after{
+    width: 50px;
+    transition:width 1s;
 }
 
 .post a:before{
@@ -131,7 +199,7 @@ header li a{
     display: inline-block;
     vertical-align: middle;
     margin-right: 20px;
-    
+    transition: width 1s;
 }
 .post a:after{
     content:"";
@@ -141,5 +209,8 @@ header li a{
     display: inline-block;
     vertical-align: middle;
     margin-left: 20px;
+    transition: width 1s;
 }
+
+
 
