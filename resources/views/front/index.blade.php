@@ -2,20 +2,7 @@
 
 
 @section('content')
-   <div class="stage">
-       <img src="{{url('images/logo.png')}}" alt="">
-   </div>
- <div class="wrap">
-
-   <div class="nav-home">
-       <ul>
-           <li class="current"><a href="{{ action('FrontController@index' )}}">Accueil</a></li>
-           <li><a href="{{ action('FrontController@actualites' )}}">Actualités</a></li>
-           <li><a href="{{ action('FrontController@lycee') }}">Lycée</a></li>
-           <li><a href="{{ action('BackController@index') }}">Connexion</a></li>
-       </ul>
-   </div>
-    <div class="ctt-post">
+ 
 @forelse($posts as $post)
         
   
@@ -27,12 +14,9 @@
         </div>
       
         @empty
-        Aucun article
-@endforelse
+            Aucun article
+        @endforelse
                   
-    </div>
-    <div class="aside">
-        <h3>A lire aussi</h3>
-    </div>
-  </div>
+    
+
 @endsection
