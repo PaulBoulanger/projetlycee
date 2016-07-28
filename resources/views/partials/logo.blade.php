@@ -1,3 +1,3 @@
 <div class="stage">
-       <img src="{{url('images/elements/logo.png')}}" alt="">
+       <img src="{{url('images/logoe.png')}}" alt="">
 </div>
