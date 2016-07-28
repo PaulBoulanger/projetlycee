@@ -1,11 +1,7 @@
-@extends('layouts.front')
+@extends('layouts.page')
 
 
 @section('content')
-
-<h2>Actualités</h2>
-
-{!! $posts->render() !!}
 
 @forelse($posts as $post)
 
@@ -19,5 +15,8 @@
         @empty
         Aucun article
 @endforelse
+<div class="clear"></div>
+{!! $posts->render() !!}
+
 
 @endsection
