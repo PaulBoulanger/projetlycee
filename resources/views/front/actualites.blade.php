@@ -1,11 +1,18 @@
-@extends('layouts.page')
+@extends('layouts.front')
 
 
 @section('content')
 
+<h2>Actualités</h2>
+
+{!! $posts->render() !!}
+
 @forelse($posts as $post)
 
         <div class="post">
+           @if($post->url_thumbnail)
+            <img src="{{ url('uploads/'.$post->id.'/'.$post->url_thumbnail) }}" alt="" class="img-responsive">
+        @endif
             <h3>{{ $post->title }}</h3>
             <p>{{ $post->content }}</p> 
             <p>{{ $post->date }}</p> 
@@ -15,8 +22,5 @@
         @empty
         Aucun article
 @endforelse
-<div class="clear"></div>
-{!! $posts->render() !!}
-
 
 @endsection

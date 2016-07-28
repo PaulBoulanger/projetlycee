@@ -2,7 +2,6 @@
 
 
 @section('content')
-<<<<<<< HEAD
    <div class="stage">
        <img src="{{url('images/logo.png')}}" alt="">
    </div>
@@ -17,14 +16,14 @@
        </ul>
    </div>
     <div class="ctt-post">
-=======
- 
->>>>>>> a776078be80196e8700f038ea210b616e619db2b
 @forelse($posts as $post)
         
   
        
         <div class="post">
+            @if($post->url_thumbnail)
+            <img src="{{ url('uploads/'.$post->id.'/'.$post->url_thumbnail) }}" alt="" class="img-responsive">
+        @endif
             <h3>{{ $post->title }}</h3>
             <p>{{ $post->content }}</p> 
             <p>{{ $post->date }}</p> 
@@ -33,9 +32,12 @@
         </div>
       
         @empty
-            Aucun article
-        @endforelse
+        Aucun article
+@endforelse
                   
-    
-
+    </div>
+    <div class="aside">
+        <h3>A lire aussi</h3>
+    </div>
+  </div>
 @endsection

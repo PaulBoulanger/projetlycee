@@ -14,9 +14,16 @@
         <label for="date">Date</label>
         <input type="date" id="date" name="date">
         
+        <label for="url_thumbnail">image</label>
+        <input type="file" name="url_thumbnail" id="url_thumbnail">
+        
+        @if($post->url_thumbnail)
+            <img src="{{ url('uploads/'.$post->id.'/'.$post->url_thumbnail) }}" alt="">
+        @endif
+        
         <button>Modifier</button>
         
-    </form>
+    </form >
 
 
 @endsection

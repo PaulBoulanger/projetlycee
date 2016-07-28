@@ -10,7 +10,7 @@ Il vous reste {{ $count }} QCM à faire
     
     @if(\App\Score::where(['question_id' => $question->id, 'user_id' => Auth::user()->id])->get()->count() > 0)
     <div class="question">
-        {{ $question->content }}
+        {{ $question->content }} - Votre note est de {{ Auth::user()->score() }}.
     </div>
     @else
     <div class="question">

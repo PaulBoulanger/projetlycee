@@ -46,6 +46,14 @@ class PostController extends Controller
     {
         $post = Post::create($request->all());
         $post->user_id = Auth::user()->id;
+        
+        if (!empty($request->file('url_thumbnail'))) {
+            $img = $request->file('url_thumbnail');
+            $ext = $img->getClientOriginalExtension();
+            $uri = str_random(50) . '.' . $ext;
+            $img->move('uploads' . DIRECTORY_SEPARATOR . $post->id, $uri);
+            $post->url_thumbnail = $uri;
+        }
         $post->touch();
         
         return redirect()->action('PostController@index')->with('message', 'Article crée avec succés !');
@@ -87,6 +95,16 @@ class PostController extends Controller
         
         $post = Post::findOrFail($id);
         $post->update($request->all());
+        
+        if ($request->file('url_thumbnail')) {
+            $img = $request->file('url_thumbnail');
+            $ext = $img->getClientOriginalExtension();
+            $uri = str_random(50) . '.' . $ext;
+            $img->move('uploads' . DIRECTORY_SEPARATOR . $post->id, $uri);
+            $post->url_thumbnail = $uri;
+        }
+        $post->touch();
+        
         return redirect()->action('PostController@index')->with('message', 'Article modifié avec succès !');
 
     }

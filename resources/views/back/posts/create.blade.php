@@ -13,6 +13,10 @@
         <label for="date">Date</label>
         <input type="date" id="date" name="date">
         
+        <label for="url_thumbnail">image</label>
+        <input type="file" name="url_thumbnail" id="url_thumbnail">
+        
+        
         <button>Modifier</button>
         
     </form>
