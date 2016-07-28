@@ -8,6 +8,11 @@ body{
 }
 
 
+a:hover {
+    text-decoration: none;
+    color: #C6E584;
+}
+
 header{
     width: 100%;
     background-color: black;
@@ -77,6 +82,7 @@ header li a{
     padding: 10px;
     font-size: 16px;
     color: #293036;
+    font-family: 'Lato', sans-serif;
     
 }
 
@@ -155,7 +161,7 @@ header li a{
 }
 .post:first-child a:before, .post:first-child a:after{
     content:"";
-    width: 350px;
+    width: 370px;
     transition: width 1s;
 }
 .post{
@@ -170,11 +176,15 @@ header li a{
 .post p{
     display: block;
     margin-top: 30px;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    text-align: justify;
 }
 .post a{
     color: black;
     font-size: 13px;
     text-align: center;
+    text-transform: uppercase;
     text-decoration: none;
     margin-top: 20px;
     margin-bottom: 50px;
@@ -182,11 +192,18 @@ header li a{
     
 }
 
+.post a:hover {
+    text-decoration: none;
+    color: #C6E584;
+}
+
 .post h3{
-    padding: 15px;
-    background-color: black;
+    padding: 12px;
+    background-color: #293036;
     color: white;
     display: initial;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
 }
 
 
@@ -202,7 +219,7 @@ header li a{
 
 .post a:before{
     content:"";
-    width: 145px;
+    width: 142px;
     height: 2px;
     background-color: black;
     display: inline-block;
@@ -212,7 +229,7 @@ header li a{
 }
 .post a:after{
     content:"";
-    width: 145px;
+    width: 142px;
     height: 2px;
     background-color: black;
     display: inline-block;
@@ -221,5 +238,22 @@ header li a{
     transition: width 1s;
 }
 
+.clear {
+    clear:both;
+}
 
+footer {
+    background: #293036;
+    padding: 10px;
+    color: white;
+}
 
+footer a {
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+footer a:hover {
+    color: #C6E584;
+    text-decoration: none;
+}

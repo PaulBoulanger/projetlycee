@@ -3,10 +3,6 @@
 
 @section('content')
 
-<h2>Actualités</h2>
-
-{!! $posts->render() !!}
-
 @forelse($posts as $post)
 
         <div class="post">
@@ -17,5 +13,8 @@
         @empty
         Aucun article
 @endforelse
+<div class="clear"></div>
+{!! $posts->render() !!}
+
 
 @endsection
