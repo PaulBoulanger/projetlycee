@@ -2,6 +2,7 @@
 
 
 @section('content')
+<<<<<<< HEAD
    <div class="stage">
        <img src="{{url('images/logo.png')}}" alt="">
    </div>
@@ -16,6 +17,9 @@
        </ul>
    </div>
     <div class="ctt-post">
+=======
+
+>>>>>>> fbae079fa0a6b2b21094a47a1ca14f559f4d4397
 @forelse($posts as $post)
         
   

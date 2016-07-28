@@ -10,6 +10,8 @@
 </head>
 <body>
     @include('partials.nav')
+    <div class="stage" style="height: 100px;margin-bottom: -50px;">
+    </div>
     @include('partials.navigation')
         <div class="container" style="margin-top:50px;">
         <div class="row">

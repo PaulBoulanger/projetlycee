@@ -53,32 +53,55 @@ header li a{
 .stage {
     width: 100%;
     display: block;
-    height: 700px;
+    max-height: 600px;
     background: url('../images/btn/fond.jpg') 0 0 repeat;
     text-align: center;
+    position: relative;
+    z-index: 1;
 }
 
 .stage img{
-    width: 450px;
+    width: auto;
     display: inline-block;
+    margin-top: 50px;
+    margin-bottom:80px;
 }
 
 
+<<<<<<< HEAD
 .nav-home{
     margin-top: -30px;
     margin-bottom: 30px;
+=======
+.nav-home {
+    position: relative;
+   top:-25px;
+    z-index: 3;
+>>>>>>> fbae079fa0a6b2b21094a47a1ca14f559f4d4397
 }
 
 .nav-home li{
     display: inline-block;
     vertical-align: middle;
     text-align: center;
+<<<<<<< HEAD
     width: 250px;
     height: 50px;
     margin-right: 62px;
     border-bottom: 3px solid;
     background-color: #fefefe;    
    
+=======
+    border-bottom: 3px solid ;
+        background-color: #F5F5F5;
+    display: block;
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 16px;
+    color: #293036;
+    font-family: 'Lato', sans-serif;
+    
+>>>>>>> fbae079fa0a6b2b21094a47a1ca14f559f4d4397
 }
 
 
@@ -214,3 +237,38 @@ header li a{
 
 
 
+<<<<<<< HEAD
+=======
+footer a:hover {
+    color: #C6E584;
+    text-decoration: none;
+}
+
+
+.pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
+    z-index: 3;
+    color: #293036 !important;
+    cursor: default;
+    background-color: #C6E584 !important;
+    border-color: #C6E584 !important;
+}
+
+.pagination > li > a:focus, .pagination > li > a:hover, .pagination > li > span:focus, .pagination > li > span:hover {
+    z-index: 2;
+    color: #C6E584 !important;
+    background-color: #eee;
+    border-color: #ddd;
+}
+
+.pagination > li > a, .pagination > li > span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #293036 !important;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+>>>>>>> fbae079fa0a6b2b21094a47a1ca14f559f4d4397
