@@ -12,6 +12,11 @@ class Post extends Model
     protected $fillable = [
         'title', 'content', 'date', 'status', 'url_thumbnail', 'user_id',
     ];
+    
+    protected $dates = [
+        'date',
+    ];
+    
    public function comments()
    {
        return $this->hasMany('App\Comment');
@@ -26,5 +31,10 @@ class Post extends Model
     {
         $date = str_replace('/', '-', $date);
         $this->attributes['date'] = Carbon::parse($date)->format('Y-m-d H:i:s');
+    }
+    
+    public function getDateAttribute($date)
+    {
+        return Carbon::parse($date)->format("d/m/Y");
     }
 }

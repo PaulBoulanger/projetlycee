@@ -12,7 +12,7 @@
            <li class="current"><a href="{{ action('FrontController@index' )}}">Accueil</a></li>
            <li><a href="{{ action('FrontController@actualites' )}}">Actualités</a></li>
            <li><a href="{{ action('FrontController@lycee') }}">Lycée</a></li>
-           <li><a href="{{ action('BackController@index') }}">Connexion</a></li>
+           <li><a href="{{ url('login') }}">Connexion</a></li>
        </ul>
    </div>
     <div class="ctt-post">
@@ -23,6 +23,8 @@
         <div class="post">
             <h3>{{ $post->title }}</h3>
             <p>{{ $post->content }}</p> 
+            <p>{{ $post->date }}</p> 
+            <p>{{ $post->user->username }}</p> 
             <a href="{{ action('FrontController@actualite', $post->id)}}">Lire la suite</a>
         </div>
       

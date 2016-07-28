@@ -5,13 +5,16 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
-
+use Auth;
 use App\Question;
 
 use App\Choice;
 
 class QuestionController extends Controller
 {
+    
+   
+    
     /**
      * Display a listing of the resource.
      *

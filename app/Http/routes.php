@@ -17,16 +17,21 @@ Route::get('actualite/{id}', 'FrontController@actualite');
 Route::get('lycee', 'FrontController@lycee');
 Route::get('mentions', 'FrontController@mentions');
 Route::get('contact', 'FronController@contact');
-
 Route::auth();
 
-Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function() {
+Route::group(['prefix' => 'admin', 'middleware' => 'auth.teacher'], function() {
     Route::get('/', 'BackController@index');
     Route::resource('articles', 'PostController');
     Route::resource('eleves', 'UserController');
     Route::resource('questions', 'QuestionController');
     Route::get('question/{id}/choix', 'QuestionController@ChoiceEdit');
     Route::put('question/{id}/choix', 'QuestionController@ChoiceUpdate');
+});
+
+Route::group(['prefix' => 'eleve', 'middleware' => ['auth']], function() {
+   Route::get('/', 'StudentController@index'); 
+   Route::get('question/{id}', 'StudentController@question'); 
+   Route::post('question/{id}', 'StudentController@validChoice'); 
 });
 
 

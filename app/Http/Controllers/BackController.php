@@ -11,6 +11,7 @@ use App\Http\Requests;
 
 class BackController extends Controller
 {
+ 
     public function index()
     {
         

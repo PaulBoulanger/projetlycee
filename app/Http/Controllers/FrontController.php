@@ -13,7 +13,7 @@ class FrontController extends Controller
 {
     public function index()
     {         
-    	$posts = Post::all();
+    	$posts = Post::orderBy('date', 'DESC')->paginate(5);
 
     	return view('front.index', compact('posts'));
     }
