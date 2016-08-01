@@ -1,13 +1,23 @@
 <header>
     <nav>
-       <div class="wrap">
-            <ul>
-                <li><a href="{{ action('FrontController@index' )}}">Home</a></li>
-                <li><a href="{{ action('FrontController@actualites' )}}">Actualités</a></li>
-                <li><a href="{{ action('FrontController@lycee') }}">Lycée</a></li>
-                <li><a href="{{ action('BackController@index') }}">Dashboard</a></li>
-                <li><a href="{{ url('logout') }}">Deconnexion</a></li>
-            </ul>
+        <div class="container">
+            <div class="row wrap">
+                <div class="col-md-9">
+                   <a class="like" href="#">
+                    <img src="images/png/like.png">
+                    <p>J'AIME</p>
+                   </a>     
+                </div> 
+                <div class="col-md-3">
+                    <div class="search">
+                        <input type="text" id="search" name="search" placeholder="Rechercher..." />
+                   </div>
+                   <div class="social">
+                        <a href="#"> <img src="images/png/fb.png"></a>                   
+                        <a href="#"> <img src="images/png/twitter.png"></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </nav>
 </header>

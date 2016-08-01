@@ -45,9 +45,17 @@ header li a{
 .aside{
     display: inline-block;
     vertical-align: top;
+<<<<<<< HEAD
+    background-color: #F3F3F3;
+    border-bottom: 3px solid #293134;
+    padding: 15px;
+    max-height: 650px;
+    width: 100%;
+=======
     background-color: grey;
     width: 25%;
     height: 700px;
+>>>>>>> 0af43fb5ea138a8f2e67261d2b8218115d1c4fc5
 }
 
 .stage {
@@ -167,17 +175,22 @@ header li a{
     display: block;
     margin-top: 50px;
 }
-.post:first-child a:before, .post:first-child a:after{
+.post:first-child a.lireplus:before, .post:first-child a.lireplus:after{
     content:"";
+<<<<<<< HEAD
+    width: 370px;
+    transition: width 2s;
+=======
     width: 350px;
     transition: width 1s;
+>>>>>>> 0af43fb5ea138a8f2e67261d2b8218115d1c4fc5
 }
 .post{
     width: 48%;
     display: inline-block;
     vertical-align: top;
     margin-right:10px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     
 }
 
@@ -185,13 +198,12 @@ header li a{
     display: block;
     margin-top: 30px;
 }
-.post a{
+.post a.lireplus{
     color: black;
     font-size: 13px;
     text-align: center;
     text-decoration: none;
     margin-top: 20px;
-    margin-bottom: 50px;
     display: block;
     
 }
@@ -209,12 +221,12 @@ header li a{
     transition:width 1s;
 }
 
-.post a:hover:before, .post a:hover:after{
+.post a.lireplus:hover:before, .post a.lireplus:hover:after{
     width: 50px;
     transition:width 1s;
 }
 
-.post a:before{
+.post a.lireplus:before{
     content:"";
     width: 145px;
     height: 2px;
@@ -224,7 +236,7 @@ header li a{
     margin-right: 20px;
     transition: width 1s;
 }
-.post a:after{
+.post a.lireplus:after{
     content:"";
     width: 145px;
     height: 2px;
@@ -271,4 +283,146 @@ footer a:hover {
     background-color: #fff;
     border: 1px solid #ddd;
 }
+<<<<<<< HEAD
+
+
+.stats {
+    font-size: 15px;
+    text-align: right;
+}
+
+.stats .user {
+    margin-right: 30px;
+}
+
+.check {
+    display: block;
+}
+
+.check a{
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #293036;
+    display: inline-block;
+}
+
+.check a:hover {
+    color: #C6E584;
+    text-decoration: none;
+}
+
+.aside h3 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.picolire {
+    background:url('../images/element/open-book.png');
+    width: 36px;
+    height: 31px;
+    display: inline-block;
+margin-bottom: -8px;
+margin-right: 8px;
+}
+
+.checkico {
+    background:url('../images/element/check.png');
+    width: 25px;
+    height: 17px;
+    display: inline-block;
+    margin-right: 10px;
+margin-top: 5px;
+}
+
+.twitter {
+    background: url('../images/element/twitter.png');
+    width: 254px;
+    height: 266px;
+    margin-left: -8px;
+    margin-top: 50px;
+}
+
+
+
+header{
+    width: 100%;
+    background: #f3f3f3;;
+    height: auto;
+    padding: 5px;
+}
+
+header li{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 50px;
+}
+
+header li a{
+    color: white;
+    font-family: 'Georgia';
+    font-size: 14px;
+    line-height: 35px;
+    text-decoration: none;
+    
+}
+
+.texte { 
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 100px;
+}
+
+.container {
+    width: 1200px !important;
+}
+
+nav .wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.like img{
+    float :left;
+    padding-right: 8px;
+    padding-top: 4px;
+}
+
+.like p {
+    color: #005dba;
+    font-size: 14px;
+    font-weight: bold;
+    float: left;
+   margin-top: 6px;
+}
+
+.search{
+    display: inline-block;
+     
+}
+
+.social{display: inline-block;}
+
+input#search {
+    background: #c6e584 url(../images/png/loupe.png) no-repeat 165px;
+    text-indent: 20px;
+    border: none;
+    padding: 5px;
+    position: relative;
+    top: -5px;
+}
+
+input#search:focus 
+{
+    background-image:none;
+}
+
+.wrap .social a{
+    float: right;
+    padding-top: 5px;
+    margin-left: 15px;
+}
+=======
 >>>>>>> fbae079fa0a6b2b21094a47a1ca14f559f4d4397
+>>>>>>> 0af43fb5ea138a8f2e67261d2b8218115d1c4fc5
