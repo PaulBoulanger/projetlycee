@@ -6,8 +6,8 @@
     
     {{Session::get('message')}}
     
-    <a href="{{ action('PostController@create')}}">ADD</a>
-    <table class="">
+    <button class="btn btn-primary pull-right ctt-ajout"><a href="{{ action('PostController@create')}}" class="ajouter">Ajouter</a></button>
+    <table class="table">
         <tr>
             <th>Titre</th>
             <th>Auteur</th>

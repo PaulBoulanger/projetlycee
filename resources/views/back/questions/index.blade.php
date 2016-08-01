@@ -6,8 +6,8 @@
     
     {{Session::get('message')}}
     
-    <a href="{{ action('QuestionController@create')}}">ADD</a>
-    <table class="">
+    <button class="btn btn-primary pull-right ctt-ajout"><a href="{{ action('QuestionController@create')}}" class="ajouter">Ajouter</a></button>
+    <table class="table">
         <tr>
             <th>Question</th>
             <th>Classe</th>

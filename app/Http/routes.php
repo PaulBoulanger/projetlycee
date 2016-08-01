@@ -19,6 +19,7 @@ Route::get('mentions', 'FrontController@mentions');
 Route::get('contact', 'FrontController@contact');
 Route::resource('commentaire', 'CommentController');
 Route::auth();
+Route::any('logout', 'UserController@logout');
 
 Route::group(['prefix' => 'admin', 'middleware' => 'auth.teacher'], function() {
     Route::get('/', 'BackController@index');
