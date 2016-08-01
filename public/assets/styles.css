@@ -45,17 +45,12 @@ header li a{
 .aside{
     display: inline-block;
     vertical-align: top;
-<<<<<<< HEAD
     background-color: #F3F3F3;
     border-bottom: 3px solid #293134;
     padding: 15px;
     max-height: 650px;
     width: 100%;
-=======
-    background-color: grey;
-    width: 25%;
     height: 700px;
->>>>>>> 0af43fb5ea138a8f2e67261d2b8218115d1c4fc5
 }
 
 .stage {
@@ -75,32 +70,25 @@ header li a{
     margin-bottom:80px;
 }
 
-
-<<<<<<< HEAD
 .nav-home{
     margin-top: -30px;
     margin-bottom: 30px;
-=======
-.nav-home {
-    position: relative;
-   top:-25px;
-    z-index: 3;
->>>>>>> fbae079fa0a6b2b21094a47a1ca14f559f4d4397
 }
 
-.nav-home li{
+.nav-home {
+    position: relative;
+   top:0px;
+    z-index: 3;
+}
+
+.nav-home div a {
     display: inline-block;
     vertical-align: middle;
     text-align: center;
-<<<<<<< HEAD
     width: 250px;
     height: 50px;
     margin-right: 62px;
     border-bottom: 3px solid;
-    background-color: #fefefe;    
-   
-=======
-    border-bottom: 3px solid ;
         background-color: #F5F5F5;
     display: block;
     text-transform: uppercase;
@@ -108,14 +96,49 @@ header li a{
     font-size: 16px;
     color: #293036;
     font-family: 'Lato', sans-serif;
-    
->>>>>>> fbae079fa0a6b2b21094a47a1ca14f559f4d4397
 }
 
+.nav-home div a:hover {
+    text-decoration: none;
+}
 
-.nav-home .current{
-  background-color: #9ccfde;
-    
+.nav-home .home {
+    border-bottom: 3px solid #9CD0DE;
+}
+
+.nav-home .actu {
+    border-bottom: 3px solid #C6E685;
+}
+
+.nav-home .lycee {
+    border-bottom: 3px solid #E0B8DA;
+}
+
+.nav-home .on {
+    border-bottom: 3px solid #2A2F33;
+}
+
+.nav-home .current_home .home{
+  background-color: #9ccfde;   
+    color: white;
+}
+
+.nav-home .current_actus .actu {
+  background-color: #C6E685;   
+        color: white;
+
+}
+
+.nav-home .current_lycee .lycee {
+  background-color: #E0B8DA; 
+        color: white;
+
+}
+
+.nav-home .current_on  .on{
+  background-color: #2A2F33;  
+        color: white;
+
 }
 
 .nav-home .current a{
@@ -177,14 +200,10 @@ header li a{
 }
 .post:first-child a.lireplus:before, .post:first-child a.lireplus:after{
     content:"";
-<<<<<<< HEAD
     width: 370px;
     transition: width 2s;
-=======
-    width: 350px;
-    transition: width 1s;
->>>>>>> 0af43fb5ea138a8f2e67261d2b8218115d1c4fc5
 }
+
 .post{
     width: 48%;
     display: inline-block;
@@ -197,22 +216,24 @@ header li a{
 .post p{
     display: block;
     margin-top: 30px;
+    font-size: 15px;
 }
 .post a.lireplus{
     color: black;
     font-size: 13px;
     text-align: center;
+    text-transform: uppercase;
     text-decoration: none;
     margin-top: 20px;
-    display: block;
-    
+    display: block;   
 }
 
 .post h3{
     padding: 15px;
-    background-color: black;
+    background-color: #283033;
     color: white;
     display: initial;
+    font-size: 18px;
 }
 
 
@@ -228,7 +249,7 @@ header li a{
 
 .post a.lireplus:before{
     content:"";
-    width: 145px;
+    width: 142px;
     height: 2px;
     background-color: black;
     display: inline-block;
@@ -236,9 +257,15 @@ header li a{
     margin-right: 20px;
     transition: width 1s;
 }
+
+
+.post a:hover {
+    text-decoration: none;
+}
+
 .post a.lireplus:after{
     content:"";
-    width: 145px;
+    width: 142px;
     height: 2px;
     background-color: black;
     display: inline-block;
@@ -247,10 +274,12 @@ header li a{
     transition: width 1s;
 }
 
+.post a:hover {
+    color: #C6E685;
+}
 
 
-<<<<<<< HEAD
-=======
+
 footer a:hover {
     color: #C6E584;
     text-decoration: none;
@@ -283,7 +312,6 @@ footer a:hover {
     background-color: #fff;
     border: 1px solid #ddd;
 }
-<<<<<<< HEAD
 
 
 .stats {
@@ -423,6 +451,88 @@ input#search:focus
     padding-top: 5px;
     margin-left: 15px;
 }
-=======
->>>>>>> fbae079fa0a6b2b21094a47a1ca14f559f4d4397
->>>>>>> 0af43fb5ea138a8f2e67261d2b8218115d1c4fc5
+
+footer {
+    background: #293036;
+    padding: 10px;
+    color: white;
+    margin-top: 50px;
+}
+
+footer a {
+    color: white;
+}
+
+
+
+span.userico {
+    background: url(../images/png/user.png);
+    width: 61px;
+    height: 18px;
+    margin-right: 10px;
+    padding-left: 14px;
+}
+
+span.dateico {
+    background: url(../images/png/date.png);
+    width: 17px;
+    height: 15px;
+    margin-right: 10px;
+    padding-left: 17px;
+}
+
+.single h2 {
+      padding: 15px;
+    background-color: #283033;
+    color: white !important;
+display: -moz-box;    
+    font-size: 18px;
+}
+
+.single p {
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.single .stats {
+    border-top: 2px solid black;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.comment {
+}
+
+.textcomm {
+    width: 100%;
+    padding: 5px;
+    background: #FFFFFF;
+    border: 1px solid #CECECE;
+}
+
+.btncomm {
+    background: #9CD0DE;
+    border: none;
+    padding: 10px;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-family: 'Lato', sans-serif;
+}
+
+.comments {
+    background: #F3F3F3;
+    border-bottom: 2px solid #293134;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+.comments h3 {
+    margin-top: 0px;
+}
+
+.comment {
+        background:#FFFFFF;
+    padding: 15px;
+
+}

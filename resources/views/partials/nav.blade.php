@@ -4,7 +4,8 @@
             <div class="row wrap">
                 <div class="col-md-9">
                    <a class="like" href="#">
-                    <img src="images/png/like.png">
+                    <img src="{{url('images/png/like.png')}}">
+                    
                     <p>J'AIME</p>
                    </a>     
                 </div> 
@@ -13,8 +14,8 @@
                         <input type="text" id="search" name="search" placeholder="Rechercher..." />
                    </div>
                    <div class="social">
-                        <a href="#"> <img src="images/png/fb.png"></a>                   
-                        <a href="#"> <img src="images/png/twitter.png"></a>
+                        <a href="#"> <img src="{{url('images/png/fb.png')}}"></a>                   
+                        <a href="#"> <img src="{{url('images/png/twitter.png')}}"></a>
                     </div>
                 </div>
             </div>

@@ -16,7 +16,7 @@ Route::get('actualites', 'FrontController@actualites');
 Route::get('actualite/{id}', 'FrontController@actualite');
 Route::get('lycee', 'FrontController@lycee');
 Route::get('mentions', 'FrontController@mentions');
-Route::get('contact', 'FronController@contact');
+Route::get('contact', 'FrontController@contact');
 Route::resource('commentaire', 'CommentController');
 Route::auth();
 

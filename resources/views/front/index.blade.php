@@ -2,46 +2,24 @@
 
 
 @section('content')
-<<<<<<< HEAD
-   <div class="stage">
-       <img src="{{url('images/logo.png')}}" alt="">
-   </div>
- <div class="wrap">
-
-   <div class="nav-home">
-       <ul>
-           <li class="current"><a href="{{ action('FrontController@index' )}}">Accueil</a></li>
-           <li><a href="{{ action('FrontController@actualites' )}}">Actualités</a></li>
-           <li><a href="{{ action('FrontController@lycee') }}">Lycée</a></li>
-           <li><a href="{{ url('login') }}">Connexion</a></li>
-       </ul>
-   </div>
-    <div class="ctt-post">
-=======
-
->>>>>>> fbae079fa0a6b2b21094a47a1ca14f559f4d4397
+ 
 @forelse($posts as $post)
-        
-  
-       
-        <div class="post">
+    <div class="post">
+        <a href="{{ action('FrontController@actualite', $post->id)}}"><h3>{{ $post->title }}</h3></a>
             @if($post->url_thumbnail)
             <img src="{{ url('uploads/'.$post->id.'/'.$post->url_thumbnail) }}" alt="" class="img-responsive">
         @endif
-            <h3>{{ $post->title }}</h3>
             <p>{{ $post->content }}</p> 
-            <p>{{ $post->date }}</p> 
-            <p>{{ $post->user->username }}</p> 
-            <a href="{{ action('FrontController@actualite', $post->id)}}">Lire la suite</a>
+            <a class="lireplus" href="{{ action('FrontController@actualite', $post->id)}}">Lire la suite</a>
+            <div class="stats">
+                <span class="user"><span class="userico"></span>{{ $post->user->username }}</span>
+                <span class="date"><span class="dateico"></span>{{ $post->date }}</span>
+            </div>
         </div>
       
         @empty
         Aucun article
 @endforelse
                   
-    </div>
-    <div class="aside">
-        <h3>A lire aussi</h3>
-    </div>
-  </div>
+    
 @endsection
